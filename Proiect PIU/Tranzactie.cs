@@ -13,6 +13,15 @@ namespace Proiect_PIU
         Cumparator cumparator;
         Vanzator vanzator;
         string dataTranzactie;
+        public Tranzactie(Cumparator _cumparator, Vanzator _vanzator)
+        {
+            cumparator = _cumparator;
+            vanzator = _vanzator;
+        }
+        public Tranzactie()
+        {
+
+        }
         public Tranzactie(int _codTranzactie, float _suma, Cumparator _cumparator, Vanzator _vanzator, string _dataTranzactie)
         {
             this.codTranzactie = _codTranzactie;
@@ -37,6 +46,17 @@ namespace Proiect_PIU
         public float get_suma()
         {
             return suma;
+        }
+        public void Read()
+        {
+            Console.WriteLine("Introdu codul tranzactiei:");
+            codTranzactie = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Introdu suma tranzactiei:");
+            suma = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Introdu data tranzactiei (format: dd-MM-yyyy):");
+            dataTranzactie = Console.ReadLine();
         }
     }
 }

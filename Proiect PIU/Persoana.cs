@@ -14,6 +14,10 @@ namespace Proiect_PIU
         protected string adresa;
         protected int telefon;
         protected string email;
+        public Persoana()
+        {
+
+        }
         public Persoana(string _nume, string _prenume, string _adresa, int _telefon, string _email)
         {
             nume = _nume;
@@ -38,6 +42,26 @@ namespace Proiect_PIU
         public string get_prenume()
         {
             return prenume;
+        }
+        public virtual void Read()
+        {
+            Console.WriteLine("Introdu numele:");
+            nume = Console.ReadLine();
+
+            Console.WriteLine("Introdu prenumele:");
+            prenume = Console.ReadLine();
+
+            Console.WriteLine("Introdu adresa:");
+            adresa = Console.ReadLine();
+
+            Console.WriteLine("Introdu numarul de telefon:");
+            while (!int.TryParse(Console.ReadLine(), out telefon))
+            {
+                Console.WriteLine("Număr de telefon invalid! Introdu un numar valid:");
+            }
+
+            Console.WriteLine("Introdu email-ul:");
+            email = Console.ReadLine();
         }
     }
 }

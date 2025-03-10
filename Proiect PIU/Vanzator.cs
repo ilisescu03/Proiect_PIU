@@ -9,6 +9,8 @@ namespace Proiect_PIU
     class Vanzator : Persoana
     {
         int codVanzator;
+        public Vanzator() { }
+        
         public Vanzator(string _nume, string _prenume, string _adresa, int _telefon, string _email, int codVanzator) : base(_nume, _prenume, _adresa, _telefon, _email)
         {
             this.codVanzator = codVanzator;
@@ -17,6 +19,12 @@ namespace Proiect_PIU
         {
             base.Display();
             Console.WriteLine("Cod vanzator: " + codVanzator);
+        }
+        public override void Read()
+        {
+            base.Read();
+            Console.WriteLine("Introdu codul vanzator:");
+            codVanzator = int.Parse(Console.ReadLine());
         }
     }
 }
