@@ -29,16 +29,18 @@ namespace Proiect_PIU
             Tranzactie tranzactie = null;
             Masina masina = null;
             Registru registru = new Registru();
-
+            Vanzatori vanzatori = new Vanzatori();
             bool running = true;
             while (running)
             {
                 Console.Clear();
                 Console.WriteLine("Meniu principal:");
-                Console.WriteLine("1. Adauga o masina în registru");
-                Console.WriteLine("2. Afiaeaza registrul");
+                Console.WriteLine("1. Adauga o masina în registru si un vanzator in baza de date vanzatori");
+                Console.WriteLine("2. Afiseaza registrul");
                 Console.WriteLine("3. Cautare masina dupa marca");
-                Console.WriteLine("4. Iesire");
+                Console.WriteLine("4. Cautare vanzator dupa nume");
+                Console.WriteLine("5. Afiseaza vanzatori");
+                Console.WriteLine("6. Iesire");
                 Console.Write("Alege o optiune (1-4): ");
 
                 string optiune = Console.ReadLine();
@@ -66,7 +68,18 @@ namespace Proiect_PIU
                         Console.ReadLine();
                         break;
 
+                    
                     case "4":
+                        Console.WriteLine("Introduceti numele vanzatorului pentru cautare:");
+                        string numeCautat = Console.ReadLine();
+                        vanzatori.CautaVanzatorDupaNume(numeCautat);
+                        Console.ReadLine();
+                        break;
+                    case "5":
+                        vanzatori.AfiseazaVanzatori();
+                        Console.ReadLine();
+                        break;
+                    case "6":
                         running = false;
                         break;
 
@@ -97,6 +110,7 @@ namespace Proiect_PIU
                 tranzactie.Read();
 
                 registru.AdaugaMasina(masina);
+                vanzatori.AdaugaVanzator(vanzator);
             }
 
         }

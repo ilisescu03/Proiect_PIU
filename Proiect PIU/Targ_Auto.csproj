@@ -52,6 +52,7 @@
     <Compile Include="Registru.cs" />
     <Compile Include="Tranzactie.cs" />
     <Compile Include="Vanzator.cs" />
+    <Compile Include="Vanzatori.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
