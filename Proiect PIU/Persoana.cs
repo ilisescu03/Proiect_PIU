@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proiect_PIU
 {
-    class Persoana
+    public class Persoana
     {
 
         protected string nume;
@@ -33,6 +33,14 @@ namespace Proiect_PIU
             Console.WriteLine("Adresa: " + adresa);
             Console.WriteLine("Telefon: " + telefon);
             Console.WriteLine("Email: " + email);
+        }
+        public void set_nume(string _nume)
+        {
+            nume = _nume;
+        }
+        public void set_prenume(string _prenume)
+        {
+            prenume = _prenume;
         }
         public string get_nume()
         {

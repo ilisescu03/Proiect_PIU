@@ -1,0 +1,13 @@
+E:\PIU Project\Proiect\Targ_Auto_UI\bin\Debug\Targ_Auto_UI.exe.config
+E:\PIU Project\Proiect\Targ_Auto_UI\bin\Debug\Targ_Auto_UI.exe
+E:\PIU Project\Proiect\Targ_Auto_UI\bin\Debug\Targ_Auto_UI.pdb
+E:\PIU Project\Proiect\Targ_Auto_UI\bin\Debug\Proiect PIU.exe
+E:\PIU Project\Proiect\Targ_Auto_UI\bin\Debug\Proiect PIU.pdb
+E:\PIU Project\Proiect\Targ_Auto_UI\bin\Debug\Proiect PIU.exe.config
+E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.csproj.AssemblyReference.cache
+E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.Properties.Resources.resources
+E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.csproj.GenerateResource.cache
+E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.csproj.CoreCompileInputs.cache
+E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Aut.611ACBC3.Up2Date
+E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.exe
+E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.pdb

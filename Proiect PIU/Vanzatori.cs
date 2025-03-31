@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,6 +44,35 @@ namespace Proiect_PIU
             else
             {
                 Console.WriteLine("Nu s-au gasit vanzatori cu numele " + numeCautat);
+            }
+        }
+        public void SaveToFile(string filePath)
+        {
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                foreach (var vanzator in listaVanzatori)
+                {
+                    writer.WriteLine(vanzator.Serialize());
+                }
+            }
+        }
+
+        public void LoadFromFile(string filePath)
+        {
+            if (!File.Exists(filePath))
+            {
+                File.Create(filePath).Close();
+            }
+
+            listaVanzatori.Clear();
+            using (StreamReader reader = new StreamReader(filePath))
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    Vanzator vanzator = Vanzator.Deserialize(line);
+                    listaVanzatori.Add(vanzator);
+                }
             }
         }
     }

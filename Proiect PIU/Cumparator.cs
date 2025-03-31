@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proiect_PIU
 {
-    class Cumparator : Persoana
+    public class Cumparator : Persoana
     {
         int codCumparator;
         public Cumparator() { }

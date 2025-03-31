@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Targ_Auto", "Proiect PIU\Targ_Auto.csproj", "{FB04A779-FB03-46BC-AA50-4C452ED73092}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Targ_Auto_UI", "Targ_Auto_UI\Targ_Auto_UI.csproj", "{E0A0B314-C00E-4F35-9C75-77A9652DAEB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FB04A779-FB03-46BC-AA50-4C452ED73092}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB04A779-FB03-46BC-AA50-4C452ED73092}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB04A779-FB03-46BC-AA50-4C452ED73092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A0B314-C00E-4F35-9C75-77A9652DAEB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A0B314-C00E-4F35-9C75-77A9652DAEB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A0B314-C00E-4F35-9C75-77A9652DAEB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A0B314-C00E-4F35-9C75-77A9652DAEB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

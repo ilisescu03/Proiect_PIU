@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proiect_PIU
 {
-    class Vanzator : Persoana
+    public class Vanzator : Persoana
     {
         int codVanzator;
         public Vanzator() { }
@@ -25,6 +25,27 @@ namespace Proiect_PIU
             base.Read();
             Console.WriteLine("Introdu codul vanzator:");
             codVanzator = int.Parse(Console.ReadLine());
+        }
+        public string Serialize()
+        {
+            return $"{nume}|{prenume}|{adresa}|{telefon}|{email}|{codVanzator}";
+        }
+
+        public static Vanzator Deserialize(string data)
+        {
+            var parts = data.Split('|');
+            if (parts.Length == 6)
+            {
+                return new Vanzator(
+                    parts[0],
+                    parts[1],
+                    parts[2],
+                    int.Parse(parts[3]),
+                    parts[4],
+                    int.Parse(parts[5])
+                );
+            }
+            throw new FormatException("Invalid data format");
         }
     }
 }

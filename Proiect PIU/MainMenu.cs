@@ -30,28 +30,29 @@ namespace Proiect_PIU
             Masina masina = null;
             Registru registru = new Registru();
             Vanzatori vanzatori = new Vanzatori();
+            registru.LoadFromFile("registru.txt");
+            vanzatori.LoadFromFile("vanzatori.txt");
             bool running = true;
             while (running)
             {
+
                 Console.Clear();
                 Console.WriteLine("Meniu principal:");
-                Console.WriteLine("1. Adauga o masina în registru si un vanzator in baza de date vanzatori");
+                Console.WriteLine("1. Adauga o masina in registru si un vanzator in baza de date vanzatori");
                 Console.WriteLine("2. Afiseaza registrul");
                 Console.WriteLine("3. Cautare masina dupa marca");
                 Console.WriteLine("4. Cautare vanzator dupa nume");
                 Console.WriteLine("5. Afiseaza vanzatori");
-                Console.WriteLine("6. Iesire");
-                Console.Write("Alege o optiune (1-4): ");
+                Console.WriteLine("6. Salveaza datele");
+                Console.WriteLine("7. Iesire");
+                Console.Write("Alege o optiune (1-7): ");
 
                 string optiune = Console.ReadLine();
 
                 switch (optiune)
                 {
                     case "1":
-                        
-
                         Citire();
-
                         Console.WriteLine("Datele au fost adaugate cu succes!");
                         Console.ReadLine();
                         break;
@@ -68,18 +69,27 @@ namespace Proiect_PIU
                         Console.ReadLine();
                         break;
 
-                    
                     case "4":
                         Console.WriteLine("Introduceti numele vanzatorului pentru cautare:");
                         string numeCautat = Console.ReadLine();
                         vanzatori.CautaVanzatorDupaNume(numeCautat);
                         Console.ReadLine();
                         break;
+
                     case "5":
                         vanzatori.AfiseazaVanzatori();
                         Console.ReadLine();
                         break;
+
                     case "6":
+                        // Save data to files
+                        registru.SaveToFile("registru.txt");
+                        vanzatori.SaveToFile("vanzatori.txt");
+                        Console.WriteLine("Datele au fost salvate cu succes!");
+                        Console.ReadLine();
+                        break;
+
+                    case "7":
                         running = false;
                         break;
 
@@ -87,10 +97,9 @@ namespace Proiect_PIU
                         Console.WriteLine("Optiune invalida!");
                         Console.ReadLine();
                         break;
-
-
                 }
             }
+
             void Citire()
             {
                 vanzator = new Vanzator();
@@ -99,20 +108,19 @@ namespace Proiect_PIU
                 cumparator = new Cumparator();
                 Console.WriteLine("Cumparator:");
                 cumparator.Read();
-                
+
                 tranzactie = new Tranzactie(cumparator, vanzator);
                 Console.WriteLine("Masina:");
-                masina = new Masina(vanzator.get_nume()+" "+vanzator.get_prenume(), cumparator.get_nume() + " " + cumparator.get_prenume());
-                
-                
+                masina = new Masina(vanzator.get_nume() + " " + vanzator.get_prenume(), cumparator.get_nume() + " " + cumparator.get_prenume());
+
                 masina.Read();
                 Console.WriteLine("Tranzactie:");
                 tranzactie.Read();
 
                 registru.AdaugaMasina(masina);
+                registru.AdaugaTranzactie(tranzactie);
                 vanzatori.AdaugaVanzator(vanzator);
             }
-
         }
     }
 }
