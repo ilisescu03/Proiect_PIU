@@ -1,0 +1,8 @@
+nd;nd;Opel;Astra g;2002;Rosu;None;1500
+nd;nd;Dacia;Logan;2003;Rosu;None;1300
+nd;nd;g;g;2;Rosu;None;2
+nd;nd;Daewoo;Tico;1980;Rosu;None;100
+nd;nd;Dacia;Logan;2018;Rosu;None;3000
+nd;nd;BMW;E46;1998;Rosu;None;5000
+nd;nd;Porche;911;2015;Rosu;None;120000
+nd;nd;BMW;X6;2016;Rosu;None;50000

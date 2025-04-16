@@ -40,6 +40,18 @@ namespace Targ_Auto
         {
             ID++;
         }
+        public Masina(string numeFisier)
+        {
+            string[] date = numeFisier.Split(';');
+            numeVanzator = date[0];
+            numeCumparator = date[1];
+            marca = date[2];
+            model = date[3];
+            anFabricatie = int.Parse(date[4]);
+            culoare = (Culoare)Enum.Parse(typeof(Culoare), date[5], true);
+            optiuni = (Optiuni)Enum.Parse(typeof(Optiuni), date[6], true);
+            pret = float.Parse(date[7]);
+        }
         public Masina(string _numeVanzator, string _numeCumparator)
         {
             numeVanzator = _numeVanzator;
@@ -117,28 +129,9 @@ namespace Targ_Auto
         {
             return optiuni;
         }
-        public string Serialize()
+        public string ConversieLaSir_PentruFisier()
         {
-            return $"Masina:|{numeVanzator}|{numeCumparator}|{marca}|{model}|{anFabricatie}|{culoare}|{(int)optiuni}|{pret}";
-        }
-
-        public static Masina Deserialize(string data)
-        {
-            var parts = data.Split('|');
-            if (parts.Length == 8)
-            {
-                return new Masina(
-                    parts[0],
-                    parts[1],
-                    parts[2],
-                    parts[3],
-                    int.Parse(parts[4]),
-                    (Culoare)Enum.Parse(typeof(Culoare), parts[5]),
-                    (Optiuni)int.Parse(parts[6]),
-                    float.Parse(parts[7])
-                );
-            }
-            throw new FormatException("Invalid data format");
+            return $"{numeVanzator};{numeCumparator};{marca};{model};{anFabricatie};{culoare};{optiuni};{pret}";
         }
     }
 }

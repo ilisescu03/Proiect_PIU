@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Targ_Auto;
+using System.Configuration;
 
 namespace Proiect_PIU
 {
     static class MainMenu
     {
+
         static void Main(string[] args)
         {
             /*
@@ -24,13 +27,18 @@ namespace Proiect_PIU
             Masina masina = new Masina(vanzator.get_nume()+' '+vanzator.get_prenume(), cumparator.get_nume() + ' ' + cumparator.get_prenume(), "Opel", "Astra G Caravan", 2002, "alb", new string[] { "aer conditionat", "Nu bate", "Nu troncane" }, tranzactie.get_suma());
             masina.Display();
             Console.WriteLine("");*/
+            string numeFisier = ConfigurationManager.AppSettings["NumeFisier"];
+            string locatieFisierSolutie = Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+            string caleCompletaFisier = locatieFisierSolutie + "\\" + numeFisier;
             Vanzator vanzator = null;
             Cumparator cumparator = null;
             Tranzactie tranzactie = null;
             Masina masina = null;
             Registru registru = new Registru();
+            RegistruFisier registruFisier = new RegistruFisier("registru.txt");
+            registru.AdauagaMasini(registruFisier.GetMasini());
             Vanzatori vanzatori = new Vanzatori();
-            registru.LoadFromFile("registru.txt");
+   
             vanzatori.LoadFromFile("vanzatori.txt");
             bool running = true;
             while (running)
@@ -83,7 +91,7 @@ namespace Proiect_PIU
 
                     case "6":
                         // Save data to files
-                        registru.SaveToFile("registru.txt");
+                        
                         vanzatori.SaveToFile("vanzatori.txt");
                         Console.WriteLine("Datele au fost salvate cu succes!");
                         Console.ReadLine();
@@ -118,6 +126,7 @@ namespace Proiect_PIU
                 tranzactie.Read();
 
                 registru.AdaugaMasina(masina);
+                registruFisier.AdaugaMasina(masina);
                 registru.AdaugaTranzactie(tranzactie);
                 vanzatori.AdaugaVanzator(vanzator);
             }
