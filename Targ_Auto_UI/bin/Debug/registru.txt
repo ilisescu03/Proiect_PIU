@@ -1,8 +1,7 @@
-nd;nd;Opel;Astra g;2002;Rosu;None;1500
-nd;nd;Dacia;Logan;2003;Rosu;None;1300
-nd;nd;g;g;2;Rosu;None;2
-nd;nd;Daewoo;Tico;1980;Rosu;None;100
-nd;nd;Dacia;Logan;2018;Rosu;None;3000
-nd;nd;BMW;E46;1998;Rosu;None;5000
-nd;nd;Porche;911;2015;Rosu;None;120000
-nd;nd;BMW;X6;2016;Rosu;None;50000
+nd;nd;Opel;Astra G Caravan;2002;Rosu;None;1500
+nd;nd;Opel;Astra G Caravan;2002;Rosu;None;1500
+nd;nd;Opel;Astra G;2002;Alb;None;1500
+nd;nd;Dacia;Logan;2008;Gri;None;2000
+nd;nd;Opel;Astra G;2002;Alb;;1500
+nd;nd;Audi;A4;2005;Negru;;6000
+nd;nd;Mercedes;GLE;2015;Negru;Aer Conditionat,Navigatie,Cutie Automata,Scaune incalzite,Trapa,Senzori parcare,Camera marsalier,Aer Conditionat,Navigatie,Cutie Automata,Scaune incalzite,Trapa,Senzori parcare,Camera marsalier;40000

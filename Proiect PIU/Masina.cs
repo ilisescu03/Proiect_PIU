@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,21 +11,16 @@ namespace Targ_Auto
     {
         Rosu,
         Alb,
-        Negru
+        Negru,
+        Albastru,
+        Verde,
+        Galben,
+        Gri,
+        Maro,
+        Mov,
+        Roz
     }
-
-    [Flags]
-    public enum Optiuni
-    {
-        None = 0,
-        AerConditionat = 1,
-        Navigatie = 2,
-        CutieAutomata = 4,
-        ScauneIncalzite = 8,
-        Trapa = 16,
-        SenzoriParcare = 32,
-        CameraMarsarier = 64
-    }
+    
     public class Masina
     {
         static int ID=0;
@@ -34,31 +30,35 @@ namespace Targ_Auto
         string model;
         int anFabricatie;
         Culoare culoare;
-        Optiuni optiuni;
+        ArrayList optiuni;
         float pret;
         public Masina()
         {
             ID++;
+            optiuni = new ArrayList();
         }
         public Masina(string numeFisier)
         {
             string[] date = numeFisier.Split(';');
+            if (date.Length != 8) return;
             numeVanzator = date[0];
             numeCumparator = date[1];
             marca = date[2];
             model = date[3];
             anFabricatie = int.Parse(date[4]);
             culoare = (Culoare)Enum.Parse(typeof(Culoare), date[5], true);
-            optiuni = (Optiuni)Enum.Parse(typeof(Optiuni), date[6], true);
+            optiuni = new ArrayList(date[6].Split(',').Select(o => o.Trim()).ToList());
+
             pret = float.Parse(date[7]);
         }
         public Masina(string _numeVanzator, string _numeCumparator)
         {
             numeVanzator = _numeVanzator;
             numeCumparator = _numeCumparator;
+            optiuni = new ArrayList();
             ID++;
         }
-        public Masina(string _numeVanzator, string _numeCumparator, string _marca, string _model, int _anFabricatie, Culoare _culoare, Optiuni _optiuni, float _pret)
+        public Masina(string _numeVanzator, string _numeCumparator, string _marca, string _model, int _anFabricatie, Culoare _culoare, ArrayList _optiuni, float _pret)
         {
             numeVanzator = _numeVanzator;
             numeCumparator = _numeCumparator;
@@ -81,8 +81,8 @@ namespace Targ_Auto
             Console.WriteLine("Model: " + model);
             Console.WriteLine("An fabricatie: " + anFabricatie);
             Console.WriteLine("Culoare: " + culoare);
-            Console.WriteLine("Optiuni: "+optiuni);
- 
+            Console.WriteLine("Optiuni: " + string.Join(", ", optiuni.Cast<string>()));
+
             Console.WriteLine("Pret: " + pret);
         }
         public void Read()
@@ -96,12 +96,9 @@ namespace Targ_Auto
             Console.WriteLine("Culoare:");
             culoare = (Culoare)Enum.Parse(typeof(Culoare), Console.ReadLine(), true);
             Console.WriteLine("Optiunile:");
-            optiuni = Optiuni.None;
-            string[] optiuniInput = Console.ReadLine().Split(',');
-            foreach (var optiune in optiuniInput)
-            {
-                optiuni |= (Optiuni)Enum.Parse(typeof(Optiuni), optiune.Trim(), true);
-            }
+            optiuni = new ArrayList(Console.ReadLine().Split(',').Select(o => o.Trim()).ToList());
+
+
             Console.WriteLine("Pret:");
             pret = float.Parse(Console.ReadLine());
         }
@@ -125,13 +122,13 @@ namespace Targ_Auto
         {
             return pret;
         }
-        public Optiuni GetOptiuni()
+        public ArrayList GetOptiuni()
         {
             return optiuni;
         }
         public string ConversieLaSir_PentruFisier()
         {
-            return $"{numeVanzator};{numeCumparator};{marca};{model};{anFabricatie};{culoare};{optiuni};{pret}";
+            return $"{numeVanzator};{numeCumparator};{marca};{model};{anFabricatie};{culoare};{string.Join(",", optiuni.Cast<string>())};{pret}";
         }
     }
 }

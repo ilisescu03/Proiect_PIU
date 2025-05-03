@@ -5,3 +5,17 @@ E:\PIU Project\Proiect\Proiect PIU\obj\Debug\Targ_Auto.csproj.CoreCompileInputs.
 E:\PIU Project\Proiect\Proiect PIU\obj\Debug\Proiect PIU.exe
 E:\PIU Project\Proiect\Proiect PIU\obj\Debug\Proiect PIU.pdb
 E:\PIU Project\Proiect\Proiect PIU\bin\Debug\Proiect PIU.pdb
+D:\Proiect_PIU-main\Proiect PIU\bin\Debug\Proiect PIU.exe.config
+D:\Proiect_PIU-main\Proiect PIU\bin\Debug\Proiect PIU.exe
+D:\Proiect_PIU-main\Proiect PIU\bin\Debug\Proiect PIU.pdb
+D:\Proiect_PIU-main\Proiect PIU\obj\Debug\Targ_Auto.csproj.AssemblyReference.cache
+D:\Proiect_PIU-main\Proiect PIU\obj\Debug\Targ_Auto.csproj.CoreCompileInputs.cache
+D:\Proiect_PIU-main\Proiect PIU\obj\Debug\Proiect PIU.exe
+D:\Proiect_PIU-main\Proiect PIU\obj\Debug\Proiect PIU.pdb
+E:\Proiect_PIU-main\Proiect PIU\bin\Debug\Proiect PIU.exe.config
+E:\Proiect_PIU-main\Proiect PIU\bin\Debug\Proiect PIU.exe
+E:\Proiect_PIU-main\Proiect PIU\bin\Debug\Proiect PIU.pdb
+E:\Proiect_PIU-main\Proiect PIU\obj\Debug\Targ_Auto.csproj.AssemblyReference.cache
+E:\Proiect_PIU-main\Proiect PIU\obj\Debug\Targ_Auto.csproj.CoreCompileInputs.cache
+E:\Proiect_PIU-main\Proiect PIU\obj\Debug\Proiect PIU.exe
+E:\Proiect_PIU-main\Proiect PIU\obj\Debug\Proiect PIU.pdb
