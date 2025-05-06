@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "E:\\PIU Project\\Proiect\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0A0B314-C00E-4F35-9C75-77A9652DAEB5}|Targ_Auto_UI\\Targ_Auto_UI.csproj|E:\\PIU Project\\Proiect\\targ_auto_ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E0A0B314-C00E-4F35-9C75-77A9652DAEB5}|Targ_Auto_UI\\Targ_Auto_UI.csproj|e:\\piu project\\proiect\\targ_auto_ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0A0B314-C00E-4F35-9C75-77A9652DAEB5}|Targ_Auto_UI\\Targ_Auto_UI.csproj|solutionrelative:targ_auto_ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0A0B314-C00E-4F35-9C75-77A9652DAEB5}|Targ_Auto_UI\\Targ_Auto_UI.csproj|e:\\piu project\\proiect\\targ_auto_ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0A0B314-C00E-4F35-9C75-77A9652DAEB5}|Targ_Auto_UI\\Targ_Auto_UI.csproj|solutionrelative:targ_auto_ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB04A779-FB03-46BC-AA50-4C452ED73092}|Proiect PIU\\Targ_Auto.csproj|e:\\piu project\\proiect\\proiect piu\\masina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB04A779-FB03-46BC-AA50-4C452ED73092}|Proiect PIU\\Targ_Auto.csproj|solutionrelative:proiect piu\\masina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FB04A779-FB03-46BC-AA50-4C452ED73092}|Proiect PIU\\Targ_Auto.csproj|E:\\PIU Project\\Proiect\\proiect piu\\registrufisier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB04A779-FB03-46BC-AA50-4C452ED73092}|Proiect PIU\\Targ_Auto.csproj|solutionrelative:proiect piu\\registrufisier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB04A779-FB03-46BC-AA50-4C452ED73092}|Proiect PIU\\Targ_Auto.csproj|E:\\PIU Project\\Proiect\\proiect piu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB04A779-FB03-46BC-AA50-4C452ED73092}|Proiect PIU\\Targ_Auto.csproj|solutionrelative:proiect piu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB04A779-FB03-46BC-AA50-4C452ED73092}|Proiect PIU\\Targ_Auto.csproj|E:\\PIU Project\\Proiect\\proiect piu\\masina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB04A779-FB03-46BC-AA50-4C452ED73092}|Proiect PIU\\Targ_Auto.csproj|solutionrelative:proiect piu\\masina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0A0B314-C00E-4F35-9C75-77A9652DAEB5}|Targ_Auto_UI\\Targ_Auto_UI.csproj|E:\\PIU Project\\Proiect\\targ_auto_ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0A0B314-C00E-4F35-9C75-77A9652DAEB5}|Targ_Auto_UI\\Targ_Auto_UI.csproj|solutionrelative:targ_auto_ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FB04A779-FB03-46BC-AA50-4C452ED73092}|Proiect PIU\\Targ_Auto.csproj|E:\\PIU Project\\Proiect\\proiect piu\\registru.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB04A779-FB03-46BC-AA50-4C452ED73092}|Proiect PIU\\Targ_Auto.csproj|solutionrelative:proiect piu\\registru.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB04A779-FB03-46BC-AA50-4C452ED73092}|Proiect PIU\\Targ_Auto.csproj|E:\\PIU Project\\Proiect\\proiect piu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB04A779-FB03-46BC-AA50-4C452ED73092}|Proiect PIU\\Targ_Auto.csproj|solutionrelative:proiect piu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FB04A779-FB03-46BC-AA50-4C452ED73092}|Proiect PIU\\Targ_Auto.csproj|E:\\PIU Project\\Proiect\\proiect piu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -72,7 +72,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -88,79 +88,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "E:\\PIU Project\\Proiect\\Targ_Auto_UI\\Form1.cs",
-              "RelativeDocumentMoniker": "Targ_Auto_UI\\Form1.cs",
-              "ToolTip": "E:\\PIU Project\\Proiect\\Targ_Auto_UI\\Form1.cs [Design]",
-              "RelativeToolTip": "Targ_Auto_UI\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T15:47:33.311Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "E:\\PIU Project\\Proiect\\Targ_Auto_UI\\Form1.cs",
               "RelativeDocumentMoniker": "Targ_Auto_UI\\Form1.cs",
               "ToolTip": "E:\\PIU Project\\Proiect\\Targ_Auto_UI\\Form1.cs",
               "RelativeToolTip": "Targ_Auto_UI\\Form1.cs",
-              "ViewState": "AgIAAPYAAAAAAAAAAAAAAAYBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC8BAAAAAAAAAAAAAEYBAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T17:52:53.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Masina.cs",
-              "DocumentMoniker": "E:\\PIU Project\\Proiect\\Proiect PIU\\Masina.cs",
-              "RelativeDocumentMoniker": "Proiect PIU\\Masina.cs",
-              "ToolTip": "E:\\PIU Project\\Proiect\\Proiect PIU\\Masina.cs",
-              "RelativeToolTip": "Proiect PIU\\Masina.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAvwCAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T16:08:06.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegistruFisier.cs",
-              "DocumentMoniker": "E:\\PIU Project\\Proiect\\Proiect PIU\\RegistruFisier.cs",
-              "RelativeDocumentMoniker": "Proiect PIU\\RegistruFisier.cs",
-              "ToolTip": "E:\\PIU Project\\Proiect\\Proiect PIU\\RegistruFisier.cs",
-              "RelativeToolTip": "Proiect PIU\\RegistruFisier.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAcwBQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T07:25:41.753Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Registru.cs",
-              "DocumentMoniker": "E:\\PIU Project\\Proiect\\Proiect PIU\\Registru.cs",
-              "RelativeDocumentMoniker": "Proiect PIU\\Registru.cs",
-              "ToolTip": "E:\\PIU Project\\Proiect\\Proiect PIU\\Registru.cs",
-              "RelativeToolTip": "Proiect PIU\\Registru.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBYAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T18:30:59.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "E:\\PIU Project\\Proiect\\Proiect PIU\\MainMenu.cs",
-              "RelativeDocumentMoniker": "Proiect PIU\\MainMenu.cs",
-              "ToolTip": "E:\\PIU Project\\Proiect\\Proiect PIU\\MainMenu.cs",
-              "RelativeToolTip": "Proiect PIU\\MainMenu.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAgwCUAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T16:24:13.449Z",
               "EditorCaption": ""
             },
             {
@@ -183,6 +119,65 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\PIU Project\\Proiect\\Targ_Auto_UI\\Form1.cs",
+              "RelativeDocumentMoniker": "Targ_Auto_UI\\Form1.cs",
+              "ToolTip": "E:\\PIU Project\\Proiect\\Targ_Auto_UI\\Form1.cs [Design]",
+              "RelativeToolTip": "Targ_Auto_UI\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T15:47:33.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Masina.cs",
+              "DocumentMoniker": "E:\\PIU Project\\Proiect\\Proiect PIU\\Masina.cs",
+              "RelativeDocumentMoniker": "Proiect PIU\\Masina.cs",
+              "ToolTip": "E:\\PIU Project\\Proiect\\Proiect PIU\\Masina.cs",
+              "RelativeToolTip": "Proiect PIU\\Masina.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAA4wIgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T16:08:06.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegistruFisier.cs",
+              "DocumentMoniker": "E:\\PIU Project\\Proiect\\Proiect PIU\\RegistruFisier.cs",
+              "RelativeDocumentMoniker": "Proiect PIU\\RegistruFisier.cs",
+              "ToolTip": "E:\\PIU Project\\Proiect\\Proiect PIU\\RegistruFisier.cs",
+              "RelativeToolTip": "Proiect PIU\\RegistruFisier.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T07:25:41.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Registru.cs",
+              "DocumentMoniker": "E:\\PIU Project\\Proiect\\Proiect PIU\\Registru.cs",
+              "RelativeDocumentMoniker": "Proiect PIU\\Registru.cs",
+              "ToolTip": "E:\\PIU Project\\Proiect\\Proiect PIU\\Registru.cs",
+              "RelativeToolTip": "Proiect PIU\\Registru.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T18:30:59.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "E:\\PIU Project\\Proiect\\Proiect PIU\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Proiect PIU\\MainMenu.cs",
+              "ToolTip": "E:\\PIU Project\\Proiect\\Proiect PIU\\MainMenu.cs",
+              "RelativeToolTip": "Proiect PIU\\MainMenu.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAgwCUAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T16:24:13.449Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\PIU Project\\Proiect\\Targ_Auto_UI\\Program.cs",
@@ -191,8 +186,7 @@
               "RelativeToolTip": "Targ_Auto_UI\\Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T18:47:49.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T18:47:49.095Z"
             },
             {
               "$type": "Document",
@@ -204,8 +198,7 @@
               "RelativeToolTip": "Targ_Auto_UI\\Form1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T18:03:46.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T18:03:46.264Z"
             },
             {
               "$type": "Document",
@@ -217,8 +210,7 @@
               "RelativeToolTip": "Proiect PIU\\Vanzator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T16:21:13.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T16:21:13.617Z"
             },
             {
               "$type": "Document",
@@ -230,8 +222,7 @@
               "RelativeToolTip": "Proiect PIU\\Cumparator.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T16:19:38.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T16:19:38.42Z"
             },
             {
               "$type": "Document",
@@ -243,8 +234,7 @@
               "RelativeToolTip": "Proiect PIU\\Persoana.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T16:19:06.219Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T16:19:06.219Z"
             },
             {
               "$type": "Document",
@@ -256,8 +246,7 @@
               "RelativeToolTip": "Proiect PIU\\Vanzatori.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAAwAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T20:49:43.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T20:49:43.457Z"
             },
             {
               "$type": "Document",
@@ -269,8 +258,7 @@
               "RelativeToolTip": "Proiect PIU\\Tranzactie.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T16:29:23.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T16:29:23.72Z"
             },
             {
               "$type": "Document",
@@ -282,8 +270,7 @@
               "RelativeToolTip": "Proiect PIU\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T16:26:03.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T16:26:03.177Z"
             }
           ]
         }

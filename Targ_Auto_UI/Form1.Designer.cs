@@ -62,6 +62,10 @@
             this.lblEroare = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.lblID2 = new System.Windows.Forms.Label();
+            this.txtCautare = new System.Windows.Forms.TextBox();
+            this.btnCautare = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -71,7 +75,7 @@
             // 
             this.lblModel2.AutoSize = true;
             this.lblModel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModel2.Location = new System.Drawing.Point(11, 53);
+            this.lblModel2.Location = new System.Drawing.Point(9, 78);
             this.lblModel2.Name = "lblModel2";
             this.lblModel2.Size = new System.Drawing.Size(45, 13);
             this.lblModel2.TabIndex = 0;
@@ -82,7 +86,7 @@
             // 
             this.lblMarca2.AutoSize = true;
             this.lblMarca2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca2.Location = new System.Drawing.Point(11, 19);
+            this.lblMarca2.Location = new System.Drawing.Point(9, 44);
             this.lblMarca2.Name = "lblMarca2";
             this.lblMarca2.Size = new System.Drawing.Size(46, 13);
             this.lblMarca2.TabIndex = 1;
@@ -114,7 +118,7 @@
             // 
             this.lblAnFabricatie2.AutoSize = true;
             this.lblAnFabricatie2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnFabricatie2.Location = new System.Drawing.Point(13, 90);
+            this.lblAnFabricatie2.Location = new System.Drawing.Point(11, 115);
             this.lblAnFabricatie2.Name = "lblAnFabricatie2";
             this.lblAnFabricatie2.Size = new System.Drawing.Size(83, 13);
             this.lblAnFabricatie2.TabIndex = 4;
@@ -125,7 +129,7 @@
             // 
             this.lblPret2.AutoSize = true;
             this.lblPret2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPret2.Location = new System.Drawing.Point(13, 122);
+            this.lblPret2.Location = new System.Drawing.Point(11, 147);
             this.lblPret2.Name = "lblPret2";
             this.lblPret2.Size = new System.Drawing.Size(34, 13);
             this.lblPret2.TabIndex = 5;
@@ -144,7 +148,7 @@
             // 
             // txtModel
             // 
-            this.txtModel.Location = new System.Drawing.Point(63, 50);
+            this.txtModel.Location = new System.Drawing.Point(61, 75);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(100, 20);
             this.txtModel.TabIndex = 7;
@@ -152,7 +156,7 @@
             // 
             // txtMarca
             // 
-            this.txtMarca.Location = new System.Drawing.Point(63, 19);
+            this.txtMarca.Location = new System.Drawing.Point(61, 44);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(100, 20);
             this.txtMarca.TabIndex = 8;
@@ -288,14 +292,14 @@
             // 
             // txtAnFabricatie
             // 
-            this.txtAnFabricatie.Location = new System.Drawing.Point(102, 87);
+            this.txtAnFabricatie.Location = new System.Drawing.Point(100, 112);
             this.txtAnFabricatie.Name = "txtAnFabricatie";
             this.txtAnFabricatie.Size = new System.Drawing.Size(100, 20);
             this.txtAnFabricatie.TabIndex = 10;
             // 
             // txtPret
             // 
-            this.txtPret.Location = new System.Drawing.Point(53, 122);
+            this.txtPret.Location = new System.Drawing.Point(51, 147);
             this.txtPret.Name = "txtPret";
             this.txtPret.Size = new System.Drawing.Size(100, 20);
             this.txtPret.TabIndex = 11;
@@ -396,6 +400,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.txtID);
+            this.groupBox3.Controls.Add(this.lblID2);
             this.groupBox3.Controls.Add(this.lblEroare);
             this.groupBox3.Controls.Add(this.btnAdd);
             this.groupBox3.Controls.Add(this.groupBox2);
@@ -410,9 +416,9 @@
             this.groupBox3.Controls.Add(this.lblAnFabricatie2);
             this.groupBox3.Controls.Add(this.lblCuloare2);
             this.groupBox3.Controls.Add(this.lblModel2);
-            this.groupBox3.Location = new System.Drawing.Point(642, 71);
+            this.groupBox3.Location = new System.Drawing.Point(699, 71);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(330, 532);
+            this.groupBox3.Size = new System.Drawing.Size(284, 512);
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
@@ -445,7 +451,7 @@
             // 
             this.btnRefresh.BackColor = System.Drawing.Color.PaleGreen;
             this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.Location = new System.Drawing.Point(389, 534);
+            this.btnRefresh.Location = new System.Drawing.Point(101, 543);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(116, 40);
             this.btnRefresh.TabIndex = 13;
@@ -453,11 +459,51 @@
             this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.Refresh_Click);
             // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(61, 19);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(100, 20);
+            this.txtID.TabIndex = 15;
+            this.txtID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // lblID2
+            // 
+            this.lblID2.AutoSize = true;
+            this.lblID2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID2.Location = new System.Drawing.Point(9, 19);
+            this.lblID2.Name = "lblID2";
+            this.lblID2.Size = new System.Drawing.Size(24, 13);
+            this.lblID2.TabIndex = 14;
+            this.lblID2.Text = "ID:";
+            this.lblID2.Click += new System.EventHandler(this.label1_Click_2);
+            // 
+            // txtCautare
+            // 
+            this.txtCautare.Location = new System.Drawing.Point(582, 554);
+            this.txtCautare.Name = "txtCautare";
+            this.txtCautare.Size = new System.Drawing.Size(53, 20);
+            this.txtCautare.TabIndex = 14;
+            // 
+            // btnCautare
+            // 
+            this.btnCautare.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnCautare.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCautare.Location = new System.Drawing.Point(460, 543);
+            this.btnCautare.Name = "btnCautare";
+            this.btnCautare.Size = new System.Drawing.Size(116, 40);
+            this.btnCautare.TabIndex = 15;
+            this.btnCautare.Text = "Cautare dupa ID";
+            this.btnCautare.UseVisualStyleBackColor = false;
+            this.btnCautare.Click += new System.EventHandler(this.btnCautare_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 749);
+            this.Controls.Add(this.btnCautare);
+            this.Controls.Add(this.txtCautare);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.Titlu);
@@ -511,6 +557,10 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Label lblEroare;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Label lblID2;
+        private System.Windows.Forms.TextBox txtCautare;
+        private System.Windows.Forms.Button btnCautare;
     }
 }
 

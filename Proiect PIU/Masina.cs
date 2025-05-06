@@ -23,7 +23,7 @@ namespace Targ_Auto
     
     public class Masina
     {
-        static int ID=0;
+        int ID;
         string numeVanzator;
         string numeCumparator;
         string marca;
@@ -34,32 +34,34 @@ namespace Targ_Auto
         float pret;
         public Masina()
         {
-            ID++;
+            
             optiuni = new ArrayList();
         }
         public Masina(string numeFisier)
         {
             string[] date = numeFisier.Split(';');
-            if (date.Length != 8) return;
-            numeVanzator = date[0];
-            numeCumparator = date[1];
-            marca = date[2];
-            model = date[3];
-            anFabricatie = int.Parse(date[4]);
-            culoare = (Culoare)Enum.Parse(typeof(Culoare), date[5], true);
-            optiuni = new ArrayList(date[6].Split(',').Select(o => o.Trim()).ToList());
+            if (date.Length != 9) return;
+            ID = Int32.Parse(date[0]);
+            numeVanzator = date[1];
+            numeCumparator = date[2];
+            marca = date[3];
+            model = date[4];
+            anFabricatie = int.Parse(date[5]);
+            culoare = (Culoare)Enum.Parse(typeof(Culoare), date[6], true);
+            optiuni = new ArrayList(date[7].Split(',').Select(o => o.Trim()).ToList());
 
-            pret = float.Parse(date[7]);
+            pret = float.Parse(date[8]);
         }
         public Masina(string _numeVanzator, string _numeCumparator)
         {
             numeVanzator = _numeVanzator;
             numeCumparator = _numeCumparator;
             optiuni = new ArrayList();
-            ID++;
+         
         }
-        public Masina(string _numeVanzator, string _numeCumparator, string _marca, string _model, int _anFabricatie, Culoare _culoare, ArrayList _optiuni, float _pret)
+        public Masina(int _ID, string _numeVanzator, string _numeCumparator, string _marca, string _model, int _anFabricatie, Culoare _culoare, ArrayList _optiuni, float _pret)
         {
+            ID = _ID;
             numeVanzator = _numeVanzator;
             numeCumparator = _numeCumparator;
             marca = _marca;
@@ -69,7 +71,7 @@ namespace Targ_Auto
             optiuni = _optiuni;
            
             pret = _pret;
-            ID++;
+          
             
         }
         public void Display()
@@ -122,13 +124,17 @@ namespace Targ_Auto
         {
             return pret;
         }
+        public int GetID()
+        {
+            return ID;
+        }
         public ArrayList GetOptiuni()
         {
             return optiuni;
         }
         public string ConversieLaSir_PentruFisier()
         {
-            return $"{numeVanzator};{numeCumparator};{marca};{model};{anFabricatie};{culoare};{string.Join(",", optiuni.Cast<string>())};{pret}";
+            return $"{ID};{numeVanzator};{numeCumparator};{marca};{model};{anFabricatie};{culoare};{string.Join(",", optiuni.Cast<string>())};{pret}";
         }
     }
 }

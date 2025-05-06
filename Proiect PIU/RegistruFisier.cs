@@ -27,6 +27,7 @@ namespace Proiect_PIU
                 streamWriterFisierText.WriteLine(masina.ConversieLaSir_PentruFisier());
             }
         }
+        
         public List<Masina> GetMasini()
         {
             List<Masina> masini = new List<Masina>();

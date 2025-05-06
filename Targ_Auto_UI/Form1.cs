@@ -19,6 +19,7 @@ namespace Targ_Auto_UI
     {
         RegistruFisier registru;
 
+        private Label lblID;
         private Label lblMarca;
         private Label lblModel;
         private Label lblCuloare;
@@ -26,6 +27,7 @@ namespace Targ_Auto_UI
         private Label lblPret;
         private Label lblOptiuni;
 
+        private Label[] lblsID;
         private Label[] lblsMarca;
         private Label[] lblsModel;
         private Label[] lblsCuloare;
@@ -62,10 +64,19 @@ namespace Targ_Auto_UI
             this.ForeColor = Color.Black;
             this.Text = "Registru";
 
+            lblID = new Label();
+            lblID.Width = LATIME_CONTROL;
+            lblID.Text = "ID";
+            lblID.Location = new Point(75, 100);
+            lblID.Size = new Size(LATIME_CONTROL, 20);
+            lblID.ForeColor = Color.Black;
+            lblID.BackColor = Color.Green;
+            this.Controls.Add(lblID);
+
             lblMarca = new Label();
             lblMarca.Width = LATIME_CONTROL;
             lblMarca.Text = "Marca";
-            lblMarca.Location = new Point(110, 100);
+            lblMarca.Location = new Point(75 + DIMENSIUNE_PAS_X, 100);
             lblMarca.Size = new Size(LATIME_CONTROL, 20);
             lblMarca.ForeColor = Color.Black;
             lblMarca.BackColor = Color.Green;
@@ -74,7 +85,7 @@ namespace Targ_Auto_UI
             lblModel = new Label();
             lblModel.Width = LATIME_CONTROL;
             lblModel.Text = "Model";
-            lblModel.Location = new Point(110 + DIMENSIUNE_PAS_X, 100);
+            lblModel.Location = new Point(75 + 2*DIMENSIUNE_PAS_X, 100);
             lblModel.Size = new Size(LATIME_CONTROL, 20);
             lblModel.ForeColor = Color.Black;
             lblModel.BackColor = Color.Green;
@@ -83,7 +94,7 @@ namespace Targ_Auto_UI
             lblCuloare = new Label();
             lblCuloare.Width = LATIME_CONTROL;
             lblCuloare.Text = "Culoare";
-            lblCuloare.Location = new Point(110 + 2 * DIMENSIUNE_PAS_X, 100);
+            lblCuloare.Location = new Point(75 + 3 * DIMENSIUNE_PAS_X, 100);
             lblCuloare.Size = new Size(LATIME_CONTROL, 20);
             lblCuloare.ForeColor = Color.Black;
             lblCuloare.BackColor = Color.Green;
@@ -92,7 +103,7 @@ namespace Targ_Auto_UI
             lblAnFabricatie = new Label();
             lblAnFabricatie.Width = LATIME_CONTROL;
             lblAnFabricatie.Text = "An Fabricatie";
-            lblAnFabricatie.Location = new Point(110 + 3 * DIMENSIUNE_PAS_X, 100);
+            lblAnFabricatie.Location = new Point(75 + 4 * DIMENSIUNE_PAS_X, 100);
             lblAnFabricatie.Size = new Size(LATIME_CONTROL, 20);
             lblAnFabricatie.ForeColor = Color.Black;
             lblAnFabricatie.BackColor = Color.Green;
@@ -102,7 +113,7 @@ namespace Targ_Auto_UI
             lblPret = new Label();
             lblPret.Width = LATIME_CONTROL;
             lblPret.Text = "Pret";
-            lblPret.Location = new Point(110 + 4 * DIMENSIUNE_PAS_X, 100);
+            lblPret.Location = new Point(75 + 5 * DIMENSIUNE_PAS_X, 100);
             lblPret.Size = new Size(LATIME_CONTROL, 20);
             lblPret.ForeColor = Color.Black;
             lblPret.BackColor = Color.Green;
@@ -111,7 +122,7 @@ namespace Targ_Auto_UI
             lblOptiuni = new Label();
             lblOptiuni.Width = LATIME_CONTROL;
             lblOptiuni.Text = "Optiuni";
-            lblOptiuni.Location = new Point(110 + 5 * DIMENSIUNE_PAS_X, 100);
+            lblOptiuni.Location = new Point(75 + 6 * DIMENSIUNE_PAS_X, 100);
             lblOptiuni.Size = new Size(LATIME_CONTROL, 20);
             lblOptiuni.ForeColor = Color.Black;
             lblOptiuni.BackColor = Color.Green;
@@ -135,6 +146,58 @@ namespace Targ_Auto_UI
 
 
         }
+        private void btnCautare_Click(object sender, EventArgs e)
+        {
+            // Get the search ID from the TextBox
+        
+            if (txtCautare == null || string.IsNullOrWhiteSpace(txtCautare.Text))
+            {
+                MessageBox.Show("Introduceti un ID valid!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!int.TryParse(txtCautare.Text, out int id))
+            {
+                MessageBox.Show("ID-ul trebuie sa fie un numar!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Search for the car by ID
+            Masina masinaGasita = CautaMasinaDupaID(id);
+
+            if (masinaGasita == null)
+            {
+                MessageBox.Show($"Nu s-a gasit nicio masina cu ID-ul {id}.", "Rezultat", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                // Display the car details
+                MessageBox.Show(
+                    $"ID: {masinaGasita.GetID()}\n" +
+                    $"Marca: {masinaGasita.GetMarca()}\n" +
+                    $"Model: {masinaGasita.GetModel()}\n" +
+                    $"Culoare: {masinaGasita.GetCuloare()}\n" +
+                    $"An Fabricatie: {masinaGasita.GetAnFabricatie()}\n" +
+                    $"Pret: {masinaGasita.GetPret()}\n" +
+                    $"Optiuni: {string.Join(", ", masinaGasita.GetOptiuni().Cast<string>())}",
+                    "Masina Gasita",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+            }
+        }
+        private Masina CautaMasinaDupaID(int value)
+        {
+            List<Masina> masini = registru.GetMasini();
+            foreach (var masina in masini)
+            {
+                if (masina.GetID() == value)
+                {
+                    return masina;
+                }
+            }
+            return null;
+        }
         private void AddBtn_Click(object sender, EventArgs e)
         {
             if(txtMarca.Text.Length>15)
@@ -151,10 +214,11 @@ namespace Targ_Auto_UI
             string marca = txtMarca.Text;
             string model = txtModel.Text;
             int anFabricatie = int.Parse(txtAnFabricatie.Text);
+            int ID = int.Parse(txtID.Text);
             float pret = float.Parse(txtPret.Text);
             Culoare culoareSelectata = GetCuloareSelectata();
            
-            Masina masina = new Masina("nd", "nd", marca, model, anFabricatie, culoareSelectata, optiuniSelectate, pret);
+            Masina masina = new Masina(ID, "nd", "nd", marca, model, anFabricatie, culoareSelectata, optiuniSelectate, pret);
             masina.GetOptiuni().AddRange(optiuniSelectate);
             registru.AdaugaMasina(masina);
   
@@ -198,6 +262,7 @@ namespace Targ_Auto_UI
             List<Masina> masini = registru.GetMasini();
             int NrMasini= masini.Count;
             lblsMarca = new Label[NrMasini];
+            lblsID = new Label[NrMasini];
             lblsModel = new Label[NrMasini];
             lblsCuloare = new Label[NrMasini];
             lblsAnFabricatie = new Label[NrMasini];
@@ -207,10 +272,19 @@ namespace Targ_Auto_UI
             int i = 0;
             foreach(var masina in masini)
             {
+                lblsID[i] = new Label();
+                lblsID[i].Width = LATIME_CONTROL;
+                lblsID[i].Text = masina.GetID().ToString();
+                lblsID[i].Location = new Point(75, 100 + (i + 1) * DIMENSIUNE_PAS_Y);
+                lblsID[i].Size = new Size(LATIME_CONTROL, 20);
+                lblsID[i].ForeColor = Color.Black;
+                lblsID[i].BackColor = Color.LightGreen;
+                this.Controls.Add(lblsID[i]);
+
                 lblsMarca[i] = new Label();
                 lblsMarca[i].Width = LATIME_CONTROL;
                 lblsMarca[i].Text = masina.GetMarca();
-                lblsMarca[i].Location = new Point(110, 100 + (i + 1) * DIMENSIUNE_PAS_Y);
+                lblsMarca[i].Location = new Point(75 + DIMENSIUNE_PAS_X, 100 + (i + 1) * DIMENSIUNE_PAS_Y);
                 lblsMarca[i].Size = new Size(LATIME_CONTROL, 20);
                 lblsMarca[i].ForeColor = Color.Black;
                 lblsMarca[i].BackColor = Color.LightGreen;
@@ -218,7 +292,7 @@ namespace Targ_Auto_UI
                 lblsModel[i] = new Label();
                 lblsModel[i].Width = LATIME_CONTROL;
                 lblsModel[i].Text = masina.GetModel();
-                lblsModel[i].Location = new Point(110 + DIMENSIUNE_PAS_X, 100 + (i + 1) * DIMENSIUNE_PAS_Y);
+                lblsModel[i].Location = new Point(75 + 2 * DIMENSIUNE_PAS_X, 100 + (i + 1) * DIMENSIUNE_PAS_Y);
                 lblsModel[i].Size = new Size(LATIME_CONTROL, 20);
                 lblsModel[i].ForeColor = Color.Black;
                 lblsModel[i].BackColor = Color.LightGreen;
@@ -226,7 +300,7 @@ namespace Targ_Auto_UI
                 lblsCuloare[i] = new Label();
                 lblsCuloare[i].Width = LATIME_CONTROL;
                 lblsCuloare[i].Text = masina.GetCuloare().ToString();
-                lblsCuloare[i].Location = new Point(110 + 2 * DIMENSIUNE_PAS_X, 100 + (i + 1) * DIMENSIUNE_PAS_Y);
+                lblsCuloare[i].Location = new Point(75 + 3 * DIMENSIUNE_PAS_X, 100 + (i + 1) * DIMENSIUNE_PAS_Y);
                 lblsCuloare[i].Size = new Size(LATIME_CONTROL, 20);
                 lblsCuloare[i].ForeColor = Color.Black;
                 lblsCuloare[i].BackColor = Color.LightGreen;
@@ -234,7 +308,7 @@ namespace Targ_Auto_UI
                 lblsAnFabricatie[i] = new Label();
                 lblsAnFabricatie[i].Width = LATIME_CONTROL;
                 lblsAnFabricatie[i].Text = masina.GetAnFabricatie().ToString();
-                lblsAnFabricatie[i].Location = new Point(110 + 3 * DIMENSIUNE_PAS_X, 100 + (i + 1) * DIMENSIUNE_PAS_Y);
+                lblsAnFabricatie[i].Location = new Point(75 + 4 * DIMENSIUNE_PAS_X, 100 + (i + 1) * DIMENSIUNE_PAS_Y);
                 lblsAnFabricatie[i].Size = new Size(LATIME_CONTROL, 20);
                 lblsAnFabricatie[i].ForeColor = Color.Black;
                 lblsAnFabricatie[i].BackColor = Color.LightGreen;
@@ -242,7 +316,7 @@ namespace Targ_Auto_UI
                 lblsPret[i] = new Label();
                 lblsPret[i].Width = LATIME_CONTROL;
                 lblsPret[i].Text = masina.GetPret().ToString();
-                lblsPret[i].Location = new Point(110 + 4 * DIMENSIUNE_PAS_X, 100 + (i + 1) * DIMENSIUNE_PAS_Y);
+                lblsPret[i].Location = new Point(75 + 5 * DIMENSIUNE_PAS_X, 100 + (i + 1) * DIMENSIUNE_PAS_Y);
                 lblsPret[i].Size = new Size(LATIME_CONTROL, 20);
                 lblsPret[i].ForeColor = Color.Black;
                 lblsPret[i].BackColor = Color.LightGreen;
@@ -250,7 +324,7 @@ namespace Targ_Auto_UI
 
                 comboBoxOptiuni[i] = new ComboBox();
                 comboBoxOptiuni[i].Width = LATIME_CONTROL;
-                comboBoxOptiuni[i].Location = new Point(110 + 5 * DIMENSIUNE_PAS_X, 100 + (i + 1) * DIMENSIUNE_PAS_Y);
+                comboBoxOptiuni[i].Location = new Point(75 + 6 * DIMENSIUNE_PAS_X, 100 + (i + 1) * DIMENSIUNE_PAS_Y);
                 comboBoxOptiuni[i].Size = new Size(LATIME_CONTROL, 20);
                 comboBoxOptiuni[i].ForeColor = Color.Black;
                 comboBoxOptiuni[i].BackColor = Color.White;
@@ -332,6 +406,16 @@ namespace Targ_Auto_UI
         }
 
         private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
