@@ -74,6 +74,11 @@ namespace Targ_Auto
           
             
         }
+        public string Serialize()
+        {
+            return $"{ID}|{numeVanzator}|{numeCumparator}|{marca}|{model}|{anFabricatie}|{culoare}|{string.Join(",", optiuni.Cast<string>())}|{pret}";
+        }
+
         public void Display()
         {
             Console.WriteLine("ID: " + ID);

@@ -1,1 +1,6 @@
-1;nd;nd;Opel;Astra G;2002;Alb;Aer Conditionat,Aer Conditionat;1500
+1;none;none;Opel;Astra G;2002;Alb;Aer Conditionat;1600
+2;none;none;BMW;E46;2000;Negru;Aer Conditionat,Trapa;2000
+3;none;none;Dacia;Logan;2024;Albastru;Aer Conditionat,Navigatie,Camera marsalier,Scaune incalzite,Senzori parcare;9000
+4;none;none;VW;Golf 4;2001;Gri;Aer Conditionat;1700
+5;none;none;VW;Passat;2003;Verde;Aer Conditionat;2000
+6;none;none;Mercedes;GLE;2019;Alb;Aer Conditionat,Navigatie,Cutie Automata,Trapa,Scaune incalzite,Senzori parcare,Camera marsalier;30000

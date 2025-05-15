@@ -50,7 +50,7 @@
             this.rdbtnRosu = new System.Windows.Forms.RadioButton();
             this.txtAnFabricatie = new System.Windows.Forms.TextBox();
             this.txtPret = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBoxOptiuni = new System.Windows.Forms.GroupBox();
             this.ckbCameraMarsalier = new System.Windows.Forms.CheckBox();
             this.ckbSenzoriParcare = new System.Windows.Forms.CheckBox();
             this.ckbTrapa = new System.Windows.Forms.CheckBox();
@@ -59,15 +59,18 @@
             this.ckbNavigatie = new System.Windows.Forms.CheckBox();
             this.ckbAerConditionat = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lblEroare = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
             this.txtID = new System.Windows.Forms.TextBox();
             this.lblID2 = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.lblEroare = new System.Windows.Forms.Label();
             this.txtCautare = new System.Windows.Forms.TextBox();
             this.btnCautare = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lstBxMasini = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.groupBoxOptiuni.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,7 +100,7 @@
             // 
             this.lblCuloare2.AutoSize = true;
             this.lblCuloare2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCuloare2.Location = new System.Drawing.Point(14, 175);
+            this.lblCuloare2.Location = new System.Drawing.Point(9, 153);
             this.lblCuloare2.Name = "lblCuloare2";
             this.lblCuloare2.Size = new System.Drawing.Size(54, 13);
             this.lblCuloare2.TabIndex = 2;
@@ -118,7 +121,7 @@
             // 
             this.lblAnFabricatie2.AutoSize = true;
             this.lblAnFabricatie2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnFabricatie2.Location = new System.Drawing.Point(11, 115);
+            this.lblAnFabricatie2.Location = new System.Drawing.Point(6, 104);
             this.lblAnFabricatie2.Name = "lblAnFabricatie2";
             this.lblAnFabricatie2.Size = new System.Drawing.Size(83, 13);
             this.lblAnFabricatie2.TabIndex = 4;
@@ -129,7 +132,7 @@
             // 
             this.lblPret2.AutoSize = true;
             this.lblPret2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPret2.Location = new System.Drawing.Point(11, 147);
+            this.lblPret2.Location = new System.Drawing.Point(9, 127);
             this.lblPret2.Name = "lblPret2";
             this.lblPret2.Size = new System.Drawing.Size(34, 13);
             this.lblPret2.TabIndex = 5;
@@ -139,7 +142,7 @@
             // 
             this.lblOptiuni2.AutoSize = true;
             this.lblOptiuni2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOptiuni2.Location = new System.Drawing.Point(14, 291);
+            this.lblOptiuni2.Location = new System.Drawing.Point(12, 255);
             this.lblOptiuni2.Name = "lblOptiuni2";
             this.lblOptiuni2.Size = new System.Drawing.Size(51, 13);
             this.lblOptiuni2.TabIndex = 6;
@@ -173,7 +176,7 @@
             this.groupBox1.Controls.Add(this.rdbtnNegru);
             this.groupBox1.Controls.Add(this.rdbtnAlb);
             this.groupBox1.Controls.Add(this.rdbtnRosu);
-            this.groupBox1.Location = new System.Drawing.Point(74, 165);
+            this.groupBox1.Location = new System.Drawing.Point(69, 153);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 100);
             this.groupBox1.TabIndex = 9;
@@ -292,32 +295,32 @@
             // 
             // txtAnFabricatie
             // 
-            this.txtAnFabricatie.Location = new System.Drawing.Point(100, 112);
+            this.txtAnFabricatie.Location = new System.Drawing.Point(101, 101);
             this.txtAnFabricatie.Name = "txtAnFabricatie";
             this.txtAnFabricatie.Size = new System.Drawing.Size(100, 20);
             this.txtAnFabricatie.TabIndex = 10;
             // 
             // txtPret
             // 
-            this.txtPret.Location = new System.Drawing.Point(51, 147);
+            this.txtPret.Location = new System.Drawing.Point(49, 120);
             this.txtPret.Name = "txtPret";
             this.txtPret.Size = new System.Drawing.Size(100, 20);
             this.txtPret.TabIndex = 11;
             // 
-            // groupBox2
+            // groupBoxOptiuni
             // 
-            this.groupBox2.Controls.Add(this.ckbCameraMarsalier);
-            this.groupBox2.Controls.Add(this.ckbSenzoriParcare);
-            this.groupBox2.Controls.Add(this.ckbTrapa);
-            this.groupBox2.Controls.Add(this.ckbScauneIncalzite);
-            this.groupBox2.Controls.Add(this.ckbCutieAutomata);
-            this.groupBox2.Controls.Add(this.ckbNavigatie);
-            this.groupBox2.Controls.Add(this.ckbAerConditionat);
-            this.groupBox2.Location = new System.Drawing.Point(74, 271);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 186);
-            this.groupBox2.TabIndex = 10;
-            this.groupBox2.TabStop = false;
+            this.groupBoxOptiuni.Controls.Add(this.ckbCameraMarsalier);
+            this.groupBoxOptiuni.Controls.Add(this.ckbSenzoriParcare);
+            this.groupBoxOptiuni.Controls.Add(this.ckbTrapa);
+            this.groupBoxOptiuni.Controls.Add(this.ckbScauneIncalzite);
+            this.groupBoxOptiuni.Controls.Add(this.ckbCutieAutomata);
+            this.groupBoxOptiuni.Controls.Add(this.ckbNavigatie);
+            this.groupBoxOptiuni.Controls.Add(this.ckbAerConditionat);
+            this.groupBoxOptiuni.Location = new System.Drawing.Point(73, 259);
+            this.groupBoxOptiuni.Name = "groupBoxOptiuni";
+            this.groupBoxOptiuni.Size = new System.Drawing.Size(200, 186);
+            this.groupBoxOptiuni.TabIndex = 10;
+            this.groupBoxOptiuni.TabStop = false;
             // 
             // ckbCameraMarsalier
             // 
@@ -402,9 +405,8 @@
             // 
             this.groupBox3.Controls.Add(this.txtID);
             this.groupBox3.Controls.Add(this.lblID2);
-            this.groupBox3.Controls.Add(this.lblEroare);
+            this.groupBox3.Controls.Add(this.groupBoxOptiuni);
             this.groupBox3.Controls.Add(this.btnAdd);
-            this.groupBox3.Controls.Add(this.groupBox2);
             this.groupBox3.Controls.Add(this.txtPret);
             this.groupBox3.Controls.Add(this.txtMarca);
             this.groupBox3.Controls.Add(this.lblMarca2);
@@ -416,48 +418,12 @@
             this.groupBox3.Controls.Add(this.lblAnFabricatie2);
             this.groupBox3.Controls.Add(this.lblCuloare2);
             this.groupBox3.Controls.Add(this.lblModel2);
-            this.groupBox3.Location = new System.Drawing.Point(699, 71);
+            this.groupBox3.Location = new System.Drawing.Point(665, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(284, 512);
+            this.groupBox3.Size = new System.Drawing.Size(284, 494);
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
-            // 
-            // lblEroare
-            // 
-            this.lblEroare.AutoSize = true;
-            this.lblEroare.BackColor = System.Drawing.Color.Transparent;
-            this.lblEroare.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEroare.ForeColor = System.Drawing.Color.Red;
-            this.lblEroare.Location = new System.Drawing.Point(86, 504);
-            this.lblEroare.Name = "lblEroare";
-            this.lblEroare.Size = new System.Drawing.Size(0, 13);
-            this.lblEroare.TabIndex = 13;
-            this.lblEroare.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(102, 463);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(116, 40);
-            this.btnAdd.TabIndex = 12;
-            this.btnAdd.Text = "Adaugare";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.AddBtn_Click);
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.PaleGreen;
-            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.Location = new System.Drawing.Point(101, 543);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(116, 40);
-            this.btnRefresh.TabIndex = 13;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            this.btnRefresh.Click += new System.EventHandler(this.Refresh_Click);
             // 
             // txtID
             // 
@@ -478,42 +444,112 @@
             this.lblID2.Text = "ID:";
             this.lblID2.Click += new System.EventHandler(this.label1_Click_2);
             // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(94, 452);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(116, 40);
+            this.btnAdd.TabIndex = 12;
+            this.btnAdd.Text = "Adaugare";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.AddBtn_Click);
+            // 
+            // lblEroare
+            // 
+            this.lblEroare.AutoSize = true;
+            this.lblEroare.BackColor = System.Drawing.Color.Transparent;
+            this.lblEroare.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEroare.ForeColor = System.Drawing.Color.Red;
+            this.lblEroare.Location = new System.Drawing.Point(775, 600);
+            this.lblEroare.Name = "lblEroare";
+            this.lblEroare.Size = new System.Drawing.Size(0, 13);
+            this.lblEroare.TabIndex = 13;
+            this.lblEroare.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // txtCautare
             // 
-            this.txtCautare.Location = new System.Drawing.Point(582, 554);
+            this.txtCautare.Location = new System.Drawing.Point(240, 112);
             this.txtCautare.Name = "txtCautare";
-            this.txtCautare.Size = new System.Drawing.Size(53, 20);
+            this.txtCautare.Size = new System.Drawing.Size(65, 20);
             this.txtCautare.TabIndex = 14;
             // 
             // btnCautare
             // 
             this.btnCautare.BackColor = System.Drawing.Color.PaleGreen;
-            this.btnCautare.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCautare.Location = new System.Drawing.Point(460, 543);
+            this.btnCautare.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCautare.Location = new System.Drawing.Point(311, 100);
             this.btnCautare.Name = "btnCautare";
-            this.btnCautare.Size = new System.Drawing.Size(116, 40);
+            this.btnCautare.Size = new System.Drawing.Size(87, 35);
             this.btnCautare.TabIndex = 15;
             this.btnCautare.Text = "Cautare dupa ID";
             this.btnCautare.UseVisualStyleBackColor = false;
             this.btnCautare.Click += new System.EventHandler(this.btnCautare_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(833, 554);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(116, 40);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.BackBtn_Click);
+            // 
+            // lstBxMasini
+            // 
+            this.lstBxMasini.FormattingEnabled = true;
+            this.lstBxMasini.Location = new System.Drawing.Point(65, 164);
+            this.lstBxMasini.Name = "lstBxMasini";
+            this.lstBxMasini.Size = new System.Drawing.Size(594, 342);
+            this.lstBxMasini.TabIndex = 21;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("MV Boli", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(57, 89);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(126, 46);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Masini";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(282, 512);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(116, 40);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Sterge masini";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.Stergere_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 749);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lstBxMasini);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnCautare);
             this.Controls.Add(this.txtCautare);
-            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.Titlu);
+            this.Controls.Add(this.lblEroare);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.groupBoxOptiuni.ResumeLayout(false);
+            this.groupBoxOptiuni.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
@@ -545,7 +581,7 @@
         private System.Windows.Forms.RadioButton rdbtnGri;
         private System.Windows.Forms.RadioButton rdbtnMov;
         private System.Windows.Forms.RadioButton rdbtnRoz;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBoxOptiuni;
         private System.Windows.Forms.CheckBox ckbAerConditionat;
         private System.Windows.Forms.CheckBox ckbNavigatie;
         private System.Windows.Forms.CheckBox ckbCutieAutomata;
@@ -555,12 +591,15 @@
         private System.Windows.Forms.CheckBox ckbCameraMarsalier;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Label lblEroare;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label lblID2;
         private System.Windows.Forms.TextBox txtCautare;
         private System.Windows.Forms.Button btnCautare;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListBox lstBxMasini;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button2;
     }
 }
 

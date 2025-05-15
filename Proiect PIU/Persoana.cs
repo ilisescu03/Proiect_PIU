@@ -51,6 +51,18 @@ namespace Proiect_PIU
         {
             return prenume;
         }
+        public string get_adresa()
+        {
+            return adresa;
+        }
+        public int get_telefon()
+        {
+            return telefon;
+        }
+        public string get_email()
+        {
+            return email;
+        }
         public virtual void Read()
         {
             Console.WriteLine("Introdu numele:");

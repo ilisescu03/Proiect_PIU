@@ -41,5 +41,13 @@ namespace Proiect_PIU
             }
             return masini;
         }
+        public void StergeTotDinFisier()
+        {
+            using (StreamWriter sw = new StreamWriter(numeFisier, false))
+            {
+                // Nu scriem nimic => fișierul va fi golit
+            }
+        }
+
     }
 }

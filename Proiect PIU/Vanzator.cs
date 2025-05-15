@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Targ_Auto;
 
 namespace Proiect_PIU
 {
@@ -10,7 +14,18 @@ namespace Proiect_PIU
     {
         int codVanzator;
         public Vanzator() { }
-        
+        public Vanzator(string numeFisier)
+        {
+            string[] date = numeFisier.Split(';');
+            if (date.Length != 6) return;
+            codVanzator = Int32.Parse(date[0]);
+            nume = date[1];
+            prenume = date[2];
+            adresa = date[3];
+            telefon = int.Parse(date[4]);
+            email = date[5];
+           
+        }
         public Vanzator(string _nume, string _prenume, string _adresa, int _telefon, string _email, int codVanzator) : base(_nume, _prenume, _adresa, _telefon, _email)
         {
             this.codVanzator = codVanzator;
@@ -46,6 +61,14 @@ namespace Proiect_PIU
                 );
             }
             throw new FormatException("Invalid data format");
+        }
+        public string ConversieLaSir_PentruFisier()
+        {
+            return $"{codVanzator};{nume};{prenume};{adresa};{telefon};{email}";
+        }
+        public int getCodVanzator()
+        {
+            return codVanzator;
         }
     }
 }

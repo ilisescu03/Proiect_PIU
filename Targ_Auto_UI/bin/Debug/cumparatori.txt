@@ -1,0 +1,4 @@
+134500;Vasilescu;Vasile;Str.Principala Nr.58;788545676;Vasilescu@gmail.com
+134501;Nistor;Robert-Cristian;Str.Principala 400;789444321;nistor.robert@gmail.com
+344556;Popescu;Andrei;Str.Florilor nr.5;789345765;popescu.andrei@gmail.com
+134502;Chirila;Cosmina-Ecaterina;Str.Principala nr 905;756541752;cosminachirila11@gmail.com

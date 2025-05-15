@@ -10,10 +10,11 @@ namespace Proiect_PIU
     {
         int codTranzactie;
         float suma;
-        Cumparator cumparator;
-        Vanzator vanzator;
+        string cumparator;
+        string vanzator;
+        string masina;
         string dataTranzactie;
-        public Tranzactie(Cumparator _cumparator, Vanzator _vanzator)
+        public Tranzactie(string _cumparator, string _vanzator)
         {
             cumparator = _cumparator;
             vanzator = _vanzator;
@@ -22,26 +23,54 @@ namespace Proiect_PIU
         {
 
         }
-        public Tranzactie(int _codTranzactie, float _suma, Cumparator _cumparator, Vanzator _vanzator, string _dataTranzactie)
+        public Tranzactie(string numeFisier)
+        {
+            string[] date = numeFisier.Split(';');
+            if (date.Length != 6) return;
+            codTranzactie = Int32.Parse(date[0]);
+            suma = float.Parse(date[1]);
+            cumparator = date[2];
+            vanzator = date[3];
+            masina = date[5];
+            dataTranzactie = date[4];
+
+        }
+        public Tranzactie(int _codTranzactie, float _suma, string _cumparator, string _vanzator, string _dataTranzactie, string masina)
         {
             this.codTranzactie = _codTranzactie;
             this.suma = _suma;
             this.cumparator = _cumparator;
             this.vanzator = _vanzator;
             this.dataTranzactie = _dataTranzactie;
+            this.masina = masina;
+
         }
         public void Display()
         {
             Console.WriteLine("Tranzactie incheiata intre:");
-            Console.WriteLine("{0} {1} si {2} {3}", cumparator.get_nume(), cumparator.get_prenume(), vanzator.get_nume(), vanzator.get_prenume());
+            Console.WriteLine("{0} si {1}", cumparator, vanzator);
             Console.WriteLine("Suma: " + suma);
             Console.WriteLine("Data tranzactie: " + dataTranzactie);
 
+        }
+        public int getCod()
+        {
+            return codTranzactie;
         }
         public string get_dataTranzactie()
         {
             return dataTranzactie;
         }
+        public string get_Cumparator()
+        {
+            return cumparator;
+        }
+        public string get_Masina()
+        {
+            return masina;
+        }
+        public string get_Vanzator()
+        { return vanzator;}
         public float get_suma()
         {
             return suma;
@@ -60,32 +89,24 @@ namespace Proiect_PIU
 
         public string Serialize()
         {
-            return $"Tranzactie:{codTranzactie}|{suma}|{cumparator.get_nume()}|{cumparator.get_prenume()}|{vanzator.get_nume()}|{vanzator.get_prenume()}|{dataTranzactie}";
+            return $"{codTranzactie}|{suma}|{cumparator}|{vanzator}|{dataTranzactie}|{masina}";
         }
 
         public static Tranzactie Deserialize(string data)
         {
             var parts = data.Split('|');
-            if (parts.Length == 7)
+            Tranzactie tranzactie = new Tranzactie(Int32.Parse(parts[0]), float.Parse(parts[1]), parts[2], parts[3], parts[4], parts[5]);
+            if (parts.Length == 6)
             {
-                var cumparator = new Cumparator();
-                cumparator.set_nume(parts[2]);
-                cumparator.set_prenume(parts[3]);
+                return tranzactie;
 
-                var vanzator = new Vanzator();
-                vanzator.set_nume(parts[4]);
-                vanzator.set_prenume(parts[5]);
-
-                return new Tranzactie(
-                    int.Parse(parts[0].Split(':')[1]),
-                    float.Parse(parts[1]),
-                    cumparator,
-                    vanzator,
-                    parts[6]
-                );
             }
             throw new FormatException("Invalid data format");
 
+        }
+        public string ConversieLaSir_PentruFisier()
+        {
+            return $"{codTranzactie};{suma};{cumparator};{vanzator};{dataTranzactie};{masina}";
         }
     }
 }

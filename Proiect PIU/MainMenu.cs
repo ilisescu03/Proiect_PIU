@@ -117,7 +117,7 @@ namespace Proiect_PIU
                 Console.WriteLine("Cumparator:");
                 cumparator.Read();
 
-                tranzactie = new Tranzactie(cumparator, vanzator);
+               // tranzactie = new Tranzactie(cumparator, vanzator);
                 Console.WriteLine("Masina:");
                 masina = new Masina(vanzator.get_nume() + " " + vanzator.get_prenume(), cumparator.get_nume() + " " + cumparator.get_prenume());
 
