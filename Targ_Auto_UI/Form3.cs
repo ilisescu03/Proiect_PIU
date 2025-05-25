@@ -16,6 +16,12 @@ namespace Targ_Auto_UI
         {
             InitializeComponent();
         }
+        private void MasiniVanduteBtn_Click(object sender, EventArgs e)
+        {
+            Form5 form5 = new Form5();
+            form5.Show();
+            this.Hide();
+        }
         private void GstRegBtn_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
@@ -32,6 +38,13 @@ namespace Targ_Auto_UI
         {
             Form2 form2 = new Form2();
             form2.Show();
+            this.Hide();
+
+        }
+        private void GraficBtn_Click(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6();
+            form6.Show();
             this.Hide();
 
         }

@@ -1,3 +1,4 @@
 234500;Ilisescu;Adrian;Str.Unirii Bl4 Ap 10;723990262;ilici75@gmail.com
 234501;Vericu;vericu;Str.Vericu;799999999;vericu@gmail.com
 234502;Ionescu;Raul;Str.Republicii Bl5 Ap.12;78984345;ionescu.raul@gmail.com
+354000;Todirescu;Raul;Str. Teilor Nr.4;788990456;todirescu.raul56@gmail.com

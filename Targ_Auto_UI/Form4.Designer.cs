@@ -47,8 +47,9 @@
             this.lblNume = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnCautare = new System.Windows.Forms.Button();
-            this.txtCautare = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.dataCauta = new System.Windows.Forms.DateTimePicker();
+            this.lblWarning = new System.Windows.Forms.Label();
             this.grp.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,9 +76,9 @@
             // lstbxTranzactii
             // 
             this.lstbxTranzactii.FormattingEnabled = true;
-            this.lstbxTranzactii.Location = new System.Drawing.Point(90, 146);
+            this.lstbxTranzactii.Location = new System.Drawing.Point(90, 185);
             this.lstbxTranzactii.Name = "lstbxTranzactii";
-            this.lstbxTranzactii.Size = new System.Drawing.Size(369, 290);
+            this.lstbxTranzactii.Size = new System.Drawing.Size(369, 251);
             this.lstbxTranzactii.TabIndex = 25;
             // 
             // grp
@@ -95,9 +96,9 @@
             this.grp.Controls.Add(this.label2);
             this.grp.Controls.Add(this.label1);
             this.grp.Controls.Add(this.lblNume);
-            this.grp.Location = new System.Drawing.Point(490, 105);
+            this.grp.Location = new System.Drawing.Point(465, 105);
             this.grp.Name = "grp";
-            this.grp.Size = new System.Drawing.Size(321, 331);
+            this.grp.Size = new System.Drawing.Size(262, 331);
             this.grp.TabIndex = 26;
             this.grp.TabStop = false;
             // 
@@ -222,7 +223,7 @@
             // 
             this.btnBack.BackColor = System.Drawing.Color.Red;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(695, 553);
+            this.btnBack.Location = new System.Drawing.Point(590, 442);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(116, 40);
             this.btnBack.TabIndex = 41;
@@ -234,26 +235,19 @@
             // 
             this.btnCautare.BackColor = System.Drawing.Color.PaleGreen;
             this.btnCautare.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCautare.Location = new System.Drawing.Point(354, 105);
+            this.btnCautare.Location = new System.Drawing.Point(312, 140);
             this.btnCautare.Name = "btnCautare";
             this.btnCautare.Size = new System.Drawing.Size(87, 35);
             this.btnCautare.TabIndex = 43;
-            this.btnCautare.Text = "Cautare dupa cod";
+            this.btnCautare.Text = "Cautare dupa data";
             this.btnCautare.UseVisualStyleBackColor = false;
             this.btnCautare.Click += new System.EventHandler(this.btnCautare_Click);
-            // 
-            // txtCautare
-            // 
-            this.txtCautare.Location = new System.Drawing.Point(283, 117);
-            this.txtCautare.Name = "txtCautare";
-            this.txtCautare.Size = new System.Drawing.Size(65, 20);
-            this.txtCautare.TabIndex = 42;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Red;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(220, 442);
+            this.button2.Location = new System.Drawing.Point(218, 442);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 40);
             this.button2.TabIndex = 44;
@@ -261,14 +255,31 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Stergere_Click);
             // 
+            // dataCauta
+            // 
+            this.dataCauta.Location = new System.Drawing.Point(90, 155);
+            this.dataCauta.Name = "dataCauta";
+            this.dataCauta.Size = new System.Drawing.Size(200, 20);
+            this.dataCauta.TabIndex = 45;
+            // 
+            // lblWarning
+            // 
+            this.lblWarning.AutoSize = true;
+            this.lblWarning.ForeColor = System.Drawing.Color.Red;
+            this.lblWarning.Location = new System.Drawing.Point(745, 105);
+            this.lblWarning.Name = "lblWarning";
+            this.lblWarning.Size = new System.Drawing.Size(0, 13);
+            this.lblWarning.TabIndex = 46;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(904, 622);
+            this.Controls.Add(this.lblWarning);
+            this.Controls.Add(this.dataCauta);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnCautare);
-            this.Controls.Add(this.txtCautare);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.grp);
             this.Controls.Add(this.lstbxTranzactii);
@@ -305,7 +316,8 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnCautare;
-        private System.Windows.Forms.TextBox txtCautare;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DateTimePicker dataCauta;
+        private System.Windows.Forms.Label lblWarning;
     }
 }

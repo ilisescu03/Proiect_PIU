@@ -44,62 +44,83 @@ namespace Targ_Auto_UI
             tranzactii.AdaugaTranzactie(tranz);
             AfiseazaTranzactii();
             ResetControls(this);
+            List<Masina> masini = registru.GetMasini();
+            foreach (Masina m in masini)
+            {
+                if (masina.Contains(m.GetID().ToString()))
+                {
+                    m.SetCumparator(cumparator);
+                    m.SetVanzator(vanzator);
+
+                }
+            }
+            registru.StergeTotDinFisier();
+            foreach (Masina m in masini)
+            {
+                registru.AdaugaMasina(m);
+            }
+
+            lblWarning.Text = ""; // Golește mesajele anterioare
+
+            var tranzactiiLista = tranzactii.GetTranzactii();
+
+            // Verificare pentru vânzători
+            var grupuriVanzatori = tranzactiiLista
+                .GroupBy(t => new { Vanzator = t.get_Vanzator(), Data = t.get_dataTranzactie() })
+                .Where(g => g.Count() > 1);
+
+            foreach (var grup in grupuriVanzatori)
+            {
+                lblWarning.Text += $"Vanzatorul {grup.Key.Vanzator} are {grup.Count()} tranzactii in aceeasi zi ({grup.Key.Data})!\n";
+            }
+
+            // Verificare pentru cumpărători
+            var grupuriCumparatori = tranzactiiLista
+                .GroupBy(t => new { Cumparator = t.get_Cumparator(), Data = t.get_dataTranzactie() })
+                .Where(g => g.Count() > 1);
+
+            foreach (var grup in grupuriCumparatori)
+            {
+                lblWarning.Text += $"Cumparatorul {grup.Key.Cumparator} are {grup.Count()} tranzactii in aceeasi zi ({grup.Key.Data})!\n";
+            }
+
 
         }
         private void btnCautare_Click(object sender, EventArgs e)
         {
-            if (txtCautare == null || string.IsNullOrWhiteSpace(txtCautare.Text))
-            {
-                MessageBox.Show("Introduceti un cod valid!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                ResetControls(this);
-                return;
-            }
-
-            if (!int.TryParse(txtCautare.Text, out int id))
-            {
-                MessageBox.Show("codul trebuie sa fie un numar!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                ResetControls(this);
-                return;
-            }
-            Tranzactie tranzactie = CautaTranzactieDupaCod(id);
-            
-            if (tranzactie == null)
-            {
-                MessageBox.Show("Nu a fost gasita persoana cu acest cod!!");
-                ResetControls(this);
-                return;
-            }
-            else { 
-                MessageBox.Show(
-
-                   "Tranzactie:\n" +
-                   $"Cod tranzactie: {tranzactie.getCod()}\n" +
-                   $"Suma: {tranzactie.get_suma()}\n" +
-                   $"Cumparator: {tranzactie.get_Cumparator()}\n" +
-                   $"Vanzator: {tranzactie.get_Vanzator()}\n" +
-                   $"Data: {tranzactie.get_dataTranzactie()}\n"+
-                   $"Masina: {tranzactie.get_Masina()}\n",
-                   "Tranzactie Gasita",
-                   MessageBoxButtons.OK,
-                   MessageBoxIcon.Information
-               );
-                ResetControls(this);
-                return;
-            }
-            
-        }
-        private Tranzactie CautaTranzactieDupaCod(int value)
-        {
+            lstbxTranzactii.Items.Clear();
             List<Tranzactie> tranzactiiLista = tranzactii.GetTranzactii();
+            RegistruFisier registru = new RegistruFisier("registru.txt");
+            List<Masina> masini = registru.GetMasini();
             foreach (Tranzactie tranzactie in tranzactiiLista)
             {
-                if (tranzactie.getCod() == value)
+                if(dataCauta.Text == tranzactie.get_dataTranzactie())
                 {
-                    return tranzactie;
+                    string[] tranzactieText = tranzactie.Serialize().Split('|');
+
+                    lstbxTranzactii.Items.Add("Cod tranzactie:" + tranzactieText[0]);
+                    lstbxTranzactii.Items.Add("Suma:" + tranzactieText[1]);
+                    lstbxTranzactii.Items.Add("Cumparator:" + tranzactieText[2]);
+                    lstbxTranzactii.Items.Add("Vanzator:" + tranzactieText[3]);
+                    lstbxTranzactii.Items.Add("Data:" + tranzactieText[4]);
+                    lstbxTranzactii.Items.Add("Masina:" + tranzactieText[5]);
+                    float profit = 0;
+                    foreach (Masina m in masini)
+                    {
+                        if (tranzactieText[5].Contains(m.GetID().ToString()))
+                        {
+                            profit = float.Parse(tranzactieText[1]) - m.GetPret();
+                            lstbxTranzactii.Items.Add("Pretul masinii:" + m.GetPret().ToString());
+                        }
+                    }
+                    lstbxTranzactii.Items.Add("Profit:" + profit.ToString());
+                    lstbxTranzactii.Items.Add(" ");
+                    lstbxTranzactii.Items.Add(" ");
                 }
             }
-            return null;
+            
         }
+        
         private void Stergere_Click(object sender, EventArgs e)
         {
             tranzactii.StergeTotDinFisier();
@@ -199,6 +220,20 @@ namespace Targ_Auto_UI
                 lstbxTranzactii.Items.Add("Profit:" + profit.ToString());
                 lstbxTranzactii.Items.Add(" ");
                 lstbxTranzactii.Items.Add(" ");
+                foreach (Masina m in masini)
+                {
+                    if (tranzactieText[5].Contains(m.GetID().ToString()))
+                    {
+                        m.SetCumparator(tranzactieText[2]);
+                        m.SetVanzator(tranzactieText[3]);
+
+                    }
+                }
+                registru.StergeTotDinFisier();
+                foreach (Masina m in masini)
+                {
+                    registru.AdaugaMasina(m);
+                }
 
             }
 

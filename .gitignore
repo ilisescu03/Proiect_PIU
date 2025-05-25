@@ -1,0 +1,32 @@
+# Fisiere generate de Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Fisiere bin si obj
+bin/
+obj/
+
+# Alte fisiere temporare
+*.log
+*.tlog
+*.cache
+*.pdb
+*.dbmdl
+*.db
+
+# Fisierele generate de build
+*.exe
+*.dll
+
+# Ignora fisierele de publicare
+.publish/
+
+# Folderul TestResults
+TestResults/
+
+# Ignora fisierele specifice Windows
+Thumbs.db
+desktop.ini

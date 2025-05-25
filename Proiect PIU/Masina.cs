@@ -137,6 +137,26 @@ namespace Targ_Auto
         {
             return optiuni;
         }
+        public void SetVanzator(string text)
+        {
+            numeVanzator = text;
+        }
+        public void SetCumparator(string text)
+        {
+            numeCumparator = text;
+        }
+        public string GetVanzator()
+        {
+            return numeVanzator;
+        }
+        public string GetCumparator()
+        {
+            return numeCumparator;
+        }
+        public string Print()
+        {
+            return $"ID: {ID}\n Vanzator: {numeVanzator}\n Cumparator: {numeCumparator}\n Marca: {marca}\n Model: {model}\n An: {anFabricatie}\n Culoare: {culoare}\n Optiuni: {string.Join(", ", optiuni.Cast<string>())}, Pret: {pret}";
+        }
         public string ConversieLaSir_PentruFisier()
         {
             return $"{ID};{numeVanzator};{numeCumparator};{marca};{model};{anFabricatie};{culoare};{string.Join(",", optiuni.Cast<string>())};{pret}";

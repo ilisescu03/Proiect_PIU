@@ -1,2 +1,0 @@
-Masina:Ilisescu Adrian|Nistor Robert|Opel|Astra|2002|Alb|0|1000
-Tranzactie:3001|2000|Nistor|Robert|Ilisescu|Adrian|09-09-2025

@@ -1,6 +1,9 @@
-1;none;none;Opel;Astra G;2002;Alb;Aer Conditionat;1600
-2;none;none;BMW;E46;2000;Negru;Aer Conditionat,Trapa;2000
-3;none;none;Dacia;Logan;2024;Albastru;Aer Conditionat,Navigatie,Camera marsalier,Scaune incalzite,Senzori parcare;9000
-4;none;none;VW;Golf 4;2001;Gri;Aer Conditionat;1700
-5;none;none;VW;Passat;2003;Verde;Aer Conditionat;2000
-6;none;none;Mercedes;GLE;2019;Alb;Aer Conditionat,Navigatie,Cutie Automata,Trapa,Scaune incalzite,Senzori parcare,Camera marsalier;30000
+1;Ionescu Raul (234502);Popescu Andrei (344556);Opel;Astra G;2002;Alb;Aer Conditionat;1600
+3;Ilisescu Adrian (234500);Nistor Robert-Cristian (134501);Dacia;Logan;2024;Albastru;Aer Conditionat,Navigatie,Camera marsalier,Scaune incalzite,Senzori parcare;9000
+4;Ionescu Raul (234502);Popescu Andrei (344556);VW;Golf 4;2001;Gri;Aer Conditionat;1700
+5;Vericu vericu (234501);Nistor Robert-Cristian (134501);VW;Passat;2003;Verde;Aer Conditionat;2000
+6;Ilisescu Adrian (234500);Nistor Robert-Cristian (134501);Mercedes;GLE;2019;Alb;Aer Conditionat,Navigatie,Cutie Automata,Trapa,Scaune incalzite,Senzori parcare,Camera marsalier;30000
+2;Ionescu Raul (234502);Popescu Andrei (344556);BMW;E46;1999;Negru;Aer Conditionat,Trapa,Scaune incalzite;3000
+7;Ilisescu Adrian (234500);Popescu Andrei (344556);VW;Passat;2003;Rosu;Aer Conditionat;2500
+1010;Ionescu Raul (234502);Popescu Andrei (344556);VW;Passat;2003;Alb;Aer Conditionat;2800
+8;Todirescu Raul (354000);Popescu Andrei (344556);Seat;Leon;2008;Rosu;Aer Conditionat;1700
