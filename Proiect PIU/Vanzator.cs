@@ -43,7 +43,7 @@ namespace Proiect_PIU
         }
         public string Serialize()
         {
-            return $"{nume}|{prenume}|{adresa}|{telefon}|{email}|{codVanzator}";
+            return $"b{nume}|{prenume}|{adresa}|{telefon}|{email}|{codVanzator}";
         }
 
         public static Vanzator Deserialize(string data)

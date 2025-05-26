@@ -132,7 +132,7 @@
             // 
             this.lblPret2.AutoSize = true;
             this.lblPret2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPret2.Location = new System.Drawing.Point(9, 127);
+            this.lblPret2.Location = new System.Drawing.Point(10, 133);
             this.lblPret2.Name = "lblPret2";
             this.lblPret2.Size = new System.Drawing.Size(34, 13);
             this.lblPret2.TabIndex = 5;
@@ -302,7 +302,7 @@
             // 
             // txtPret
             // 
-            this.txtPret.Location = new System.Drawing.Point(49, 120);
+            this.txtPret.Location = new System.Drawing.Point(50, 130);
             this.txtPret.Name = "txtPret";
             this.txtPret.Size = new System.Drawing.Size(100, 20);
             this.txtPret.TabIndex = 11;

@@ -1,16 +1,5 @@
-E:\PIU Project\Proiect\Targ_Auto_UI\bin\Debug\Targ_Auto_UI.exe.config
 E:\PIU Project\Proiect\Targ_Auto_UI\bin\Debug\Targ_Auto_UI.exe
-E:\PIU Project\Proiect\Targ_Auto_UI\bin\Debug\Targ_Auto_UI.pdb
 E:\PIU Project\Proiect\Targ_Auto_UI\bin\Debug\Proiect PIU.exe
-E:\PIU Project\Proiect\Targ_Auto_UI\bin\Debug\Proiect PIU.pdb
-E:\PIU Project\Proiect\Targ_Auto_UI\bin\Debug\Proiect PIU.exe.config
-E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.csproj.AssemblyReference.cache
-E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.Properties.Resources.resources
-E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.csproj.GenerateResource.cache
-E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.csproj.CoreCompileInputs.cache
-E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Aut.611ACBC3.Up2Date
-E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.exe
-E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.pdb
 D:\Proiect_PIU-main\Targ_Auto_UI\bin\Debug\Targ_Auto_UI.exe.config
 D:\Proiect_PIU-main\Targ_Auto_UI\bin\Debug\Targ_Auto_UI.exe
 D:\Proiect_PIU-main\Targ_Auto_UI\bin\Debug\Targ_Auto_UI.pdb
@@ -38,7 +27,6 @@ E:\Proiect_PIU-main\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.csproj.CoreCompileInputs
 E:\Proiect_PIU-main\Targ_Auto_UI\obj\Debug\Targ_Aut.611ACBC3.Up2Date
 E:\Proiect_PIU-main\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.exe
 E:\Proiect_PIU-main\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.pdb
-E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.Form1.resources
 D:\Proiect_PIU-main\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.Form2.resources
 D:\Proiect_PIU-main\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.csproj.SuggestedBindingRedirects.cache
 D:\Proiect_PIU-main\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.csproj.CopyComplete
@@ -60,8 +48,3 @@ D:\Proiect_PIU-main\Proiect_PIU-main\Targ_Auto_UI\bin\Debug\Proiect PIU.exe
 D:\Proiect_PIU-main\Proiect_PIU-main\Targ_Auto_UI\bin\Debug\Proiect PIU.pdb
 D:\Proiect_PIU-main\Proiect_PIU-main\Targ_Auto_UI\bin\Debug\Proiect PIU.exe.config
 D:\Proiect_PIU-main\Proiect_PIU-main\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.csproj.CopyComplete
-E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.Form2.resources
-E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.Form3.resources
-E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.Form4.resources
-E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.Form5.resources
-E:\PIU Project\Proiect\Targ_Auto_UI\obj\Debug\Targ_Auto_UI.Form6.resources

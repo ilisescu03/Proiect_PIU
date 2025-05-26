@@ -170,6 +170,12 @@ namespace Targ_Auto_UI
         {
             // Cod pentru adăugarea unei persoane (opțional)
             if (cmboxTipPersoana.SelectedIndex == -1) return;
+            if (txtNume.Text == "") return;
+            if (txtPrenume.Text == "") return;
+            if (txtAdresa.Text == "") return;
+            if (txtTelefon.Text == "") return;
+            if (txtEmail.Text == "") return;
+            if (txtCod.Text == "") return;
             string tipClient = cmboxTipPersoana.Text;
             string nume = txtNume.Text;
             string prenume = txtPrenume.Text;

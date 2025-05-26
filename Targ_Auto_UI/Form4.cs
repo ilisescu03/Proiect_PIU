@@ -34,6 +34,11 @@ namespace Targ_Auto_UI
         }
         private void btnAdauga_Click(object sender, EventArgs e)
         {
+            if (txtCodTranzactie.Text == "") return;
+            if (txtSuma.Text == "") return;
+            if (cmbxCumparatori.Text == "") return;
+            if (cmbxVanzatori.Text == "") return;
+            if (cmbxRegistru.Text == "") return;   
             int codTranz=Int32.Parse(txtCodTranzactie.Text);
             float suma = float.Parse(txtSuma.Text);
             string cumparator=cmbxCumparatori.Text;

@@ -7,3 +7,6 @@
 1010;3000;Popescu Andrei (344556);Ionescu Raul (234502);miercuri, 14 mai 2025;VW Passat (1010)
 1011;3000;Nistor Robert-Cristian (134501);Vericu vericu (234501);duminică, 25 mai 2025;VW Passat (5)
 1012;2800;Popescu Andrei (344556);Todirescu Raul (354000);joi, 7 august 2025;Seat Leon (8)
+1013;24000;Ardelenescu Andrei (234500);Ionescu Raul (234502);miercuri, 14 august 2024;BMW X6 (9)
+1013;5000;Popescu Andrei (344556);Vericu vericu (234501);joi, 8 mai 2025;VW Golf 4 (4)
+1015;2400;Marinescu Matei (134502);Ilisescu Adrian (234500);vineri, 30 mai 2025;VW Golf 4 (10)

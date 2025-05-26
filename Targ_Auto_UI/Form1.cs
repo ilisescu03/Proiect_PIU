@@ -121,7 +121,12 @@ namespace Targ_Auto_UI
         }
         private void AddBtn_Click(object sender, EventArgs e)
         {
-            if(txtMarca.Text.Length>15)
+            if(txtMarca.Text == "" || txtModel.Text == "" || txtAnFabricatie.Text == "" || txtID.Text == "" || txtPret.Text == "")
+            {
+                lblEroare.Text = "Completati toate campurile!!!";
+                return;
+            }
+            if (txtMarca.Text.Length>15)
             {
                 lblEroare.Text = "Maxim 15 caractere sunt permise!!!";
                 return;
